@@ -1,0 +1,114 @@
+/* Body */
+body{
+    font-size:1.5rem;
+    font-weight: 400;
+    font-family:system-ui;
+    background-color: rgb(203, 220, 247);
+    color: rgba(26, 26, 26, 0.9);
+}
+
+/* Dark Mode Toggle button */
+#toggle-btn{
+    width: 70px;
+    height: 40px;
+    border: 2px solid rgb(33, 96, 223);
+    border-radius: 100px;
+    background-color:white;
+    position: absolute;
+}
+#toggle-slider{
+  width:30px;
+  height: 25px;
+  border-radius: 100%;
+  background-color:rgb(86,141,229);
+}
+
+/* Stopwatch Container  */
+#stopwatch-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#stopwatch-name{
+    width: 100vw;
+    font-family: sans-serif;
+    font-size: 4rem;
+    color:rgb(86,141,229);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Display container which contains display time */
+#display-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#display-time{
+    font-size: 8rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+#display-time span{
+    margin-left:-4px;
+}
+#sec{
+    color: rgb(201, 69, 69)
+}
+
+/* Stopwatch buttons (start,stop,reset) */
+#stopwatch-button button{
+    border: none;
+    font-size:1.5rem;
+    margin: 1rem;
+    background-color:rgb(203, 220, 247) ;
+}
+button i{
+    color:white;
+    border-radius: 100%;
+    background-color: rgb(86,141,229);
+    padding: 1.5rem;
+}
+button i:hover{
+    background-color: rgb(0,103, 192);
+    box-shadow: 0px 0px 6px 4px rgba(0, 103, 192, 0.4) ; /* to give shadow effect */
+}
+#reset i{
+    background-color: rgba(201, 69, 69,0.9);
+}
+#reset i:hover{
+    background-color: rgb(201, 69, 69);
+    box-shadow: 0px 0px 6px 4px rgba(201, 69, 69,0.5) ; /* to give shadow effect */
+}
+
+/* Media Queries for screen size smaller than 768px */
+@media screen and (max-width:768px){
+    #toggle-btn{
+        width: 55px;
+        height: 30px;
+    }
+    #toggle-slider{
+        width:15px;
+        height: 15px;
+    }
+    #stopwatch-container{
+        width: 100vw;
+    }
+    #stopwatch-name{
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+    #display-time{
+        font-size: 4rem;
+    }
+    button{
+        font-size:1rem;
+        margin: 0.5rem;
+    }
+    button i{
+        padding: 1rem;
+    }
+    
+}
